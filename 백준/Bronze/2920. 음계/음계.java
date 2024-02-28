@@ -16,7 +16,7 @@ public class Main {
                 ascending = false;
             }
 
-            if (A != 8 - i) {
+            if (A != S.length - i) {
                 descending = false;
             }
         }
