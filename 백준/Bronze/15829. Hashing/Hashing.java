@@ -7,9 +7,11 @@ public class Main {
         String A = sc.next();
         sc.close();
         long R = 0;
+        long P = 1;
         for(int i = 0; i < L; i++){
-            R += (long)((A.charAt(i) - 'a' + 1) * Math.pow(31, i));
+            R += ((A.charAt(i) - 'a' + 1) * P);
+            P = (P*31)%1234567891;
         }
-        System.out.println(R);
+        System.out.println(R%1234567891);
     }
 }
